@@ -718,7 +718,9 @@ class Window(pyglet.window.Window):
             Number representing any modifying keys that were pressed.
 
         """
-        if symbol == key.W:
+        if symbol == key.Q:
+            pyglet.app.exit()
+        elif symbol == key.W:
             self.strafe[0] -= 1
         elif symbol == key.S:
             self.strafe[0] += 1
